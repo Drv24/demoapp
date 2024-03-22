@@ -1,0 +1,6 @@
+namespace: dev
+
+configmap:
+  name: helmconfigmapdev
+  data:
+    CUSTOM_HEADER: 'Helm - Dev Landscape !'

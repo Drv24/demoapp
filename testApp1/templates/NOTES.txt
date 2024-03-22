@@ -1,0 +1,6 @@
+minikube image load drv24/demoapp:latestv1 
+helm upgrade demoapp-rel-latest testApp1/ --values testApp1/values.yaml  
+helm install demoapp-rel-dev testApp1/ --values testApp1/values.yaml -f testApp1/values-dev.yaml -n dev 
+helm install demoapp-rel-prod testApp1/ --values testApp1/values.yaml -f testApp1/values-prod.yaml -n prod
+kubectl get all
+Port Forwarding Required

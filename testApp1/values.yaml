@@ -1,0 +1,12 @@
+appName: demoapphelm
+
+namespace: default
+
+configmap:
+  name: helmconfigmapv2
+  data:
+    CUSTOM_HEADER: 'Customized configmap using Helm values!'
+
+image:
+  name: drv24/demoapp
+  tag: latestv1
