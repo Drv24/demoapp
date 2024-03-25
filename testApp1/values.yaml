@@ -10,3 +10,5 @@ configmap:
 image:
   name: drv24/demoapp
   tag: latestv1
+
+replicas: 1 
