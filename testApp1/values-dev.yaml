@@ -1,6 +1,8 @@
+appName: demoapp-dev
+
 namespace: dev
 
 configmap:
   name: helmconfigmapdev
   data:
-    CUSTOM_HEADER: 'Helm - Dev Landscape !'
+    CUSTOM_HEADER: 'Helm - Dev Landscape ! - v2'
