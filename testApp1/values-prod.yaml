@@ -1,8 +1,8 @@
-appName: demoapp-prod
+appName: demoapp-prod-v1
 
 namespace: prod
 
 configmap:
   name: helmconfigmapprod
   data:
-    CUSTOM_HEADER: 'Helm - Prod Landscape !'
+    CUSTOM_HEADER: 'Helm - Prod Landscape ! - version 1.1'
