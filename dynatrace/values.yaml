@@ -1,0 +1,17 @@
+clusterName: testCluster
+
+apiUrl: https://canary.eu12.apm.services.cloud.sap/e/29470cca-7435-463d-8472-f7c73833ef16/api
+
+namespace: dynatrace
+
+enableIstio: true
+
+activeGate:
+  resources:
+    requests:
+      cpu: 500m
+      memory: 512Mi
+    
+    limits:
+      cpu: 1000m
+      memory: 1.5Gi
