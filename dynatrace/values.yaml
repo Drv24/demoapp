@@ -1,4 +1,4 @@
-clusterName: testCluster
+clusterName: testcluster
 
 apiUrl: https://canary.eu12.apm.services.cloud.sap/e/29470cca-7435-463d-8472-f7c73833ef16/api
 
