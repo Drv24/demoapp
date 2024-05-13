@@ -4,6 +4,9 @@ kind: DynaKube
 metadata:
   name: {{ .Values.clusterName}}
   namespace: {{ .Values.namespace}}
+  annotations:
+    "helm.sh/hook": post-install
+    "helm.sh/hook-weight": "-5"
 spec:
   # Dynatrace apiUrl including the `/api` path at the end.
   # For SaaS, set `ENVIRONMENTID` to your environment ID.

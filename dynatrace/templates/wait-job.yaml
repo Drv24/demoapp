@@ -1,0 +1,11 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: wait-for-pod
+spec:
+  template:
+    spec:
+      containers:
+      - name: wait-for-pod
+        command: ['sh', '-c', 'kubectl -n dynatrace wait pod --for=condition=ready --selector=app.kubernetes.io/name=dynatrace-operator,app.kubernetes.io/component=webhook --timeout=300s']
+      restartPolicy: OnFailure
