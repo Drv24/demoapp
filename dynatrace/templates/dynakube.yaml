@@ -185,11 +185,11 @@ spec:
     #
     resources:
       requests:
-        cpu: 500m
-        memory: 512Mi
+        cpu: {{ .Values.activeGate.resources.requests.cpu }}
+        memory: {{ .Values.activeGate.resources.requests.memory }}
       limits:
-        cpu: 1000m
-        memory: 1.5Gi
+        cpu: {{ .Values.activeGate.resources.limits.cpu }}
+        memory: {{ .Values.activeGate.resources.limits.memory }}
 
     # Optional: Adds custom labels to ActiveGate pods
     # Can be used to structure workloads
