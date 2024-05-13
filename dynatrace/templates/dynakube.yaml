@@ -2,8 +2,8 @@
 apiVersion: dynatrace.com/v1beta1
 kind: DynaKube
 metadata:
-  name: {{ .Values.clusterName}}
-  namespace: {{ .Values.namespace}}
+  name: {{ .Values.clusterName }}
+  namespace: {{ .Values.namespace }}
   annotations:
     "helm.sh/hook": post-install
     "helm.sh/hook-weight": "-5"
@@ -17,7 +17,7 @@ spec:
   # Optional: Name of the secret holding the credentials required to connect to the Dynatrace tenant
   # If unset, the name of this custom resource is used
   #
-  # tokens: ""
+  tokens: {{ .Values.clusterName }}
 
   # Optional: Defines a custom pull secret in case you use a private registry when pulling images from the Dynatrace environment
   # The secret has to be of type 'kubernetes.io/dockerconfigjson' (see https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
