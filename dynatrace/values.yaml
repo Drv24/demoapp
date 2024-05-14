@@ -1,4 +1,4 @@
-clusterName: testcluster
+clusterName: controlplane
 
 apiUrl: https://canary.eu12.apm.services.cloud.sap/e/29470cca-7435-463d-8472-f7c73833ef16/api
 
@@ -15,3 +15,7 @@ activeGate:
     limits:
       cpu: 1000m
       memory: 1.5Gi
+
+tokens:
+  apiToken: ZHQwYzAxLjdRVVQyNTJEVUNTRkFOWE9JSDZZQ0VJVi5YSk5ESExRUUZQNVJOUFhSSFFGNVZCSU82UlhJR1UzWUNaQk9OVDRGV01GQ0hXSldBNklNRVE0VkRFUURDQlA1
+  dataIngestToken: ZHQwYzAxLk40R01SM0NZRkhPSFRVQVRSUFBNMlQ3Ni5BSVdONlU3SllZQjdTNVg2U1IzNjJTWEs3MlZDQUdSNERDM0QyTEpEQU02N0VZVEFCMjJEU1pENFpFUFIyWlNK
