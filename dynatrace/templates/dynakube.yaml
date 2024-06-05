@@ -219,7 +219,7 @@ spec:
     # Recommended: Sets the activation group for ActiveGate instances
     #
     # group: ""
-    group: {{ .Values.clusterName }}
+    group: {{ .Values.activeGateGroup }}
 
 
     # Optional: Defines a custom properties file, the file contents can be provided either as a value in this yaml or as a reference to a secret.
